@@ -18,14 +18,14 @@ use Pod::Usage;
 ###############################################################################
 ##############         Print informative message             ##################
 ###############################################################################
-print "###########################################################\n";
-print "#   cmap_stats.pl Version 1.0                             #\n";
-print "#                                                         #\n";
-print "#  Created by Jennifer Shelton 08/26/14                   #\n";
-print "#  github.com/i5K-KINBRE-script-share                     #\n";
-print "#  perl  cmap_stats.pl -help # for usage/options          #\n";
-print "#  perl  cmap_stats.pl -man # for more details            #\n";
-print "###########################################################\n";
+#print "###########################################################\n";
+#print "#   cmap_stats.pl Version 1.0                             #\n";
+#print "#                                                         #\n";
+#print "#  Created by Jennifer Shelton 08/26/14                   #\n";
+#print "#  github.com/i5K-KINBRE-script-share                     #\n";
+#print "#  perl  cmap_stats.pl -help # for usage/options          #\n";
+#print "#  perl  cmap_stats.pl -man # for more details            #\n";
+#print "###########################################################\n";
 ###############################################################################
 ##############                get arguments                  ##################
 ###############################################################################
@@ -86,7 +86,7 @@ foreach(my $j=0; $fraction>$total_length/2; $j++) #until $fraction is greater th
 }
 $current_length = $current_length/1000000;
 $total_length = $total_length/1000000;
-print "$title,$filename,$current_length,$cmap_count,$total_length\n";
+print $out "$title,$filename,$current_length,$cmap_count,$total_length\n";
 close $out;
 ###############################################################################
 ##############                  Documentation                ##################
