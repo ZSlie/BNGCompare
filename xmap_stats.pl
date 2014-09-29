@@ -45,7 +45,7 @@ or pod2usage(2);
 pod2usage(1) if $help;
 pod2usage(-exitstatus => 0, -verbose => 2) if $man;
 my (${filename}, ${directories}, ${suffix}) = fileparse($input_xmap,'\..*'); # requires File::Basename and adds trailing slash to 
-$directories
+
 ###############################################################################
 ##############              run                              ##################
 ###############################################################################
