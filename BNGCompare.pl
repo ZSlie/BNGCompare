@@ -74,7 +74,7 @@ print "Reference_cmap_stats completed\n";
 ##############              run                              ##################
 ###############################################################################
 print "Generating Query CMAP stats...\n";
-my $makeQue = `perl ${dirname}/cmap_stats.pl -c $que -o $outFile_D -t "refCmap"`;
+my $makeQue = `perl ${dirname}/cmap_stats.pl -c $que -o $outFile_D -t "queryCmap"`;
 print "$makeQue";
 print "Query_cmap_stats completed\n";
 ###############################################################################
