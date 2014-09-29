@@ -18,14 +18,14 @@ use Pod::Usage;
 ###############################################################################
 ##############         Print informative message             ##################
 ###############################################################################
-print "###########################################################\n";
-print "#  xmap_stats.pl Version 1.0                              #\n";
-print "#                                                         #\n";
-print "#  Created by Jennifer Shelton 08/26/14                   #\n";
-print "#  github.com/i5K-KINBRE-script-share                     #\n";
-print "#  perl xmap_stats.pl -help # for usage/options           #\n";
-print "#  perl xmap_stats.pl -man # for more details             #\n";
-print "###########################################################\n";
+#print "###########################################################\n";
+#print "#  xmap_stats.pl Version 1.0                              #\n";
+#print "#                                                         #\n";
+#print "#  Created by Jennifer Shelton 08/26/14                   #\n";
+#print "#  github.com/i5K-KINBRE-script-share                     #\n";
+#print "#  perl xmap_stats.pl -help # for usage/options           #\n";
+#print "#  perl xmap_stats.pl -man # for more details             #\n";
+#print "###########################################################\n";
 ###############################################################################
 ##############                get arguments                  ##################
 ###############################################################################
