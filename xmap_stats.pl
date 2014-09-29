@@ -50,7 +50,7 @@ my (${filename}, ${directories}, ${suffix}) = fileparse($input_xmap,'\..*'); # r
 ##############              run                              ##################
 ###############################################################################
 #h XmapEntryID  QryContigID     RefContigID     QryStartPos     QryEndPos       RefStartPos     RefEndPos       Orientation     Confidence      HitEnum
-open (my $out, ">", $outFile) or die "Can't open $outFile"; 
+open (my $out, ">>", $outFile) or die "Can't open $outFile"; 
 my $xmap;
 my ($breadth,$total_length,%refs);
 open ( $xmap, "<", $input_xmap) or die "Can't open $input_xmap";
