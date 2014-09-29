@@ -44,7 +44,7 @@ GetOptions (
 or pod2usage(2);
 pod2usage(1) if $help;
 pod2usage(-exitstatus => 0, -verbose => 2) if $man;
-my (${filename}, ${directories}, ${suffix}) = fileparse($outFile,'\..*'); # requires File::Basename and adds trailing slash to $directories
+my (${filename}, ${directories}, ${suffix}) = fileparse($input_cmap,'\..*'); # requires File::Basename and adds trailing slash to $directories
 ###############################################################################
 ##############              run                              ##################
 ###############################################################################
