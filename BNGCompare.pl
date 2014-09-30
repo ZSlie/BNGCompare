@@ -4,7 +4,7 @@
 # USAGE: perl BNGCompare.pl [options]
 # Script outputs...
 #  Created by jennifer shelton //14
-#
+#  Edited by Zach Sliefert //14
 #################################################################################
 use strict;
 use warnings;
@@ -53,29 +53,29 @@ my $outFile_D = "${directories}${filename}_BNGCompare.csv";
 ##############              run                              ##################
 ###############################################################################
 print "Generating xmap stats...\n";
-my $makeX = `perl ${dirname}/xmap_stats.pl -x $xmap -o $outFile_D`;
-print "$makeX";
+my $makeX = `perl ${dirname}/xmap_stats.pl -x $xmap -o $outFile_D`; #Defines the variable $makeX as a perl command for the xmap_stats.pl script, a bash command.
+print "$makeX"; #Runs the $makeX command
 print "xmap_stats completed\n";
 ###############################################################################
 ##############              run                              ##################
 ###############################################################################
 print "Generating fasta stats...\n";
-my $makeF = `perl ${dirname}/N50.pl $fasta $outFile_D`;
-print "$makeF";
+my $makeF = `perl ${dirname}/N50.pl $fasta $outFile_D`;#Defines the variable $makeF as a perl command for the N50.pl script, a bash command.
+print "$makeF"; #Runs the $makeF command
 print "xmap_stats completed\n";
 ###############################################################################
 ##############              run                              ##################
 ###############################################################################
 print "Generating Reference CMAP stats...\n";
-my $makeRef = `perl ${dirname}/cmap_stats.pl -c $ref -o $outFile_D -t "refCmap"`;
-print "$makeRef";
+my $makeRef = `perl ${dirname}/cmap_stats.pl -c $ref -o $outFile_D -t "refCmap"`; #Defines the variable $makeRef as a perl command for the cmap_stats.pl script, a bash command.
+print "$makeRef"; #Runs the $makeRef command
 print "Reference_cmap_stats completed\n";
 ###############################################################################
 ##############              run                              ##################
 ###############################################################################
 print "Generating Query CMAP stats...\n";
-my $makeQue = `perl ${dirname}/cmap_stats.pl -c $que -o $outFile_D -t "queryCmap"`;
-print "$makeQue";
+my $makeQue = `perl ${dirname}/cmap_stats.pl -c $que -o $outFile_D -t "queryCmap"`; #Defines the variable $makeQue as a perl command for the cmap_stats.pl script, a bash command.
+print "$makeQue"; #Runs the $makeQue command
 print "Query_cmap_stats completed\n";
 ###############################################################################
 ############## Name output file based on input filename      ##################
@@ -102,6 +102,7 @@ BNGCompare.pl - Script outputs ...
     -man	    full documentation
  Required parameters:
     -f	    fasta to annotate with blastx
+    -o      The outfile. In this case it will be "{directory}/{FileName}_BNGCompare.csv".
  Optional parameters:
     -m	     maximum sequences to report alignments for
 
