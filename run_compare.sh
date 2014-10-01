@@ -12,7 +12,7 @@ FASTA2="$2"
 /homes/sliefert/BNGCompare/BNGCompare.pl -f ${DIR}${FASTA}.fasta -r ${DIR}${FASTA}.fasta_QI.cmap -q ${DIR}${FASTA2}.fasta_QI.cmap -x ${DIR}${FASTA}_to_${FASTA2}.xmap
 
 #Get N50 of last fasta
-/homes/sliefert/BNGCompare/N50.pl ${DIR}${FASTA2}.fasta ${DIR}${FASTA}_BNGCompare.csv
+perl /homes/sliefert/BNGCompare/N50.pl ${DIR}${FASTA2}.fasta ${DIR}${FASTA}_BNGCompare.csv
 
 
 #Flip xmap
