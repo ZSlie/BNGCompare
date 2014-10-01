@@ -13,3 +13,10 @@ FASTA2="fasta_basename"
 
 #Get N50 of last fasta
 /homes/sliefert/BNGCompare/N50.pl ${DIR}${FASTA2}.fasta ${DIR}${FASTA}_BNGCompare.csv
+
+
+#Flip xmap
+perl /homes/bioinfo/bioinfo_software/bionano/Irys-scaffolding/KSU_bioinfo_lab/stitch/flip_xmap.pl ${DIR}${FASTA}_to_${FASTA2}.xmap ${DIR}${FASTA2}_to_${FASTA}
+
+perl /homes/bioinfo/bioinfo_software/bionano/BNGCompare/xmap_stats.pl -x ${DIR}${FASTA2}_to_${FASTA}.flip -o ${DIR}${FASTA}_BNGCompare.csv
+
