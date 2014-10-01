@@ -77,8 +77,8 @@ foreach(my $j=0; $fraction>$total_length/2; $j++) #until $fraction is greater th
     $current_length=$lengths[$j];
     $fraction -= $current_length; # subtract current length from $fraction
 }
-print $out " ,File Name,N50,Number of Contigs,Cumulative Length\n";
-print $out "xmap,$filename,$current_length,$contig,$total_length\n";
+print $out " ,File Name,N50 Mb,Number of Contigs,Cumulative Length Mb\n";
+print $out "fasta,$filename,$current_length,$contig,$total_length\n";
 close $out;
 
 
