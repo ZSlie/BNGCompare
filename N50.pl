@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/perl 
 # USAGE: N50.pl FASTA Out
 # DESCRIPTION: Script calculates N50 for a fasta sequence file
 use warnings;
