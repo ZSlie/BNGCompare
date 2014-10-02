@@ -21,6 +21,6 @@ perl /homes/bioinfo/bioinfo_software/bionano/Irys-scaffolding/KSU_bioinfo_lab/st
 perl /homes/bioinfo/bioinfo_software/bionano/BNGCompare/xmap_stats.pl -x ${DIR}${FASTA2}_to_${FASTA}.flip -o ${DIR}${FASTA}_BNGCompare.csv
 
 #Print New Lines for segmentation
-echo "\n\n\n" >>  ${DIR}${FASTA}_BNGCompare.csv
+echo -e "\n\n\n" >>  ${DIR}${FASTA}_BNGCompare.csv
 
 
